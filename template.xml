@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="5"
+    name="Debug Activity"
+    minApi="7"
+    minBuildApi="14"
+    description="创建一个Debug的Activity">
+
+    <category value="Activity" />
+    <formfactor value="Mobile" />
+
+    <parameter
+        id="activityClass"
+        name="Activity名称"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="SetupActivity"
+        help="创建Activity的名称" />
+
+    <parameter
+        id="addExample"
+        name="是否添加按钮使用示例"
+        type="boolean"
+        default="false"
+        help="选择时会自动生成测试按钮；否则不生成" />
+    
+    <parameter
+        id="addJumpActivity"
+        name="是否添加跳转Activity示例"
+        type="boolean"
+        default="false"
+        help="选择时会自动生成跳转Activity相关逻辑；否则不生成" />
+
+
+    <parameter
+        id="isLauncher"
+        name="设为启动页面"
+        type="boolean"
+        default="true"
+        help="选择时设置该页面为启动页面；否则不设" />
+    
+    <parameter
+        id="packageName"
+        name="包名"
+        type="string"
+        constraints="package"
+        default="com.mycompany.myapp"
+        help="输入Application包名" />
+
+    <!-- 128x128 thumbnails relative to template.xml -->
+    <thumbs>
+        <!-- default thumbnail is required -->
+        <thumb>template_debug_activity.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
