@@ -27,6 +27,7 @@ import java.util.List;
  * 3. 点击按钮触发方法: 在子类声明一个名称以"_"开头的方法(支持任意修饰符),最终生成按钮的文字便是改方法截去"_"<br />
  * 4. 方法参数支持缺省参数和单个参数<br />
  * 5. 如果是单个参数,参数类型必须是Button或Button的父类类型,当方法执行时,该参数会被赋值为该Buttom对象<br />
+ * https://github.com/puke3615/DebugActivity<br />
  * <p>
  *
  * @author zijiao
