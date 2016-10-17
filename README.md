@@ -1,6 +1,6 @@
 ### DebugActivity
 
-Android Studio Template模板
+Android Studio Template模板，更多信息请访问 [博客](https://puke3615.github.io/2016/10/16/Android%20Studio%E6%A8%A1%E6%9D%BF%E4%B9%8B%E6%96%87%E4%BB%B6%E7%BB%84/)
 
 ##### 使用姿势
 
